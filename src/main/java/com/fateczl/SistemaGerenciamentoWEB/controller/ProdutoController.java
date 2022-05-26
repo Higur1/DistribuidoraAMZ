@@ -33,7 +33,6 @@ public class ProdutoController {
 			if (!botaoAdicionar.isEmpty()) {
 				Produto p = new Produto();
 				
-				p.setId(null); // criar variavel para somar os ids
 				p.setNome(param.get("nomeProduto"));
 				p.setDescricao(param.get("categoria"));
 				p.setNcmSh(param.get("ncmsh"));

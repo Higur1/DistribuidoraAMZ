@@ -11,7 +11,7 @@ public class GenericDAO {
 
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 
-		String hostName = "127.0.0.1";
+		String hostName = "127.0.0.1"; 
 		String dbName = "SistemaGerenciamentoWEB";
 		String user = "sa";
 		String senha = "Hungria123";
@@ -19,8 +19,10 @@ public class GenericDAO {
 		String connect = String.format(
 				"jdbc:jtds:sqlserver://%s:1433;databaseName=%s;namedPipes=true;user=%s;password=%s", hostName, dbName,
 				user, senha);
+		String connectAkio = String.format(
+				"jdbc:jtds:sqlserver://localhost:1433;namedPipes=true;user=%s;password=%s", hostName, dbName,
+				user, senha);
 		c = DriverManager.getConnection(connect);
-
 		return c;
 	}
 }

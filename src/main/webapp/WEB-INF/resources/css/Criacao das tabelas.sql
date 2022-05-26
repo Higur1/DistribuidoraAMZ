@@ -47,3 +47,33 @@ AS
 	 FROM Cliente c INNER JOIN Endereco e ON c.id = e.id_cliente 
 
 Exec sp_lista_clientes
+
+
+// 26/05/2022
+
+CREATE TABLE Categoria (
+	id int IDENTITY,
+	nome VARCHAR(max)
+	)
+
+ALTER TABLE CATEGORIA
+ADD CONSTRAINT pk_id_categoria PRIMARY KEY(id)
+
+
+CREATE TABLE Produto (
+	id int IDENTITY,
+	nome VARCHAR(max),
+	descricao VARCHAR(max),
+	ncmSh VARCHAR(max),
+	preco FLOAT
+	)
+
+ALTER TABLE PRODUTO
+ADD CONSTRAINT pk_id_produto PRIMARY KEY(id)
+
+CREATE Table categoria_produto(
+	id_categoria int,
+	id_produto int,
+	CONSTRAINT fk_id_categoria FOREIGN KEY (id_categoria) REFERENCES Categoria(id),
+	CONSTRAINT fk_id_produto FOREIGN KEY (id_produto) REFERENCES Produto(id)
+	)
