@@ -19,4 +19,8 @@ public class ProdutoController {
 	public ModelAndView init(ModelMap model) {
 		return new ModelAndView();
 	}
+	@RequestMapping(name="ProdutoListar", value="/ProdutoListar", method=RequestMethod.GET)
+	public ModelAndView listaProduto(ModelMap model) {
+		return new ModelAndView();
+	}
 }

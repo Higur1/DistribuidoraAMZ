@@ -9,11 +9,10 @@
 	<meta charset="ISO-8859-1">
 	<link rel="stylesheet" type="text/css"
 		href='<c:url value="./resources/css/styles.css"/>'>
-	<title>Gerenciar Usuarios</title>
+	<title>Produto</title>
 </head>
 
 <body>
-
 	<nav class="menu-lateral">
 		<ul>
 			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
@@ -27,29 +26,35 @@
 		</ul>
 	</nav>
 	<div class="formulario">
-		<form action="GerenciarUsuarios" method="post" class="form">
-			<input type="text" class="inputPesquisa" placeholder="Digite sua pesquisa">
-			<table class="table">	
-						<thead>
+		<form action="ProdutoListar" method="post" class="form">
+			<div>
+				<input type="text" class="inputPesquisa" placeholder="Digite sua pesquisa">
+				<table class="table">	
+					<thead>
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Nome do Produto</th>
+							<th>Preco</th>
+						</tr>
+					</thead>
+					<tbody class="nomes">
+						<c:forEach var="Produto" items="${listaProduto}">
 							<tr>
-								<th></th>
-								<th>Usuários</th>
+								<td><input type="submit"><img src="./resources/img/editar"></td>
+								<td><c:out value="${Produto.nome}"></c:out></td>
+								<td><c:out value="${Produto.preco}"></c:out></td>
 							</tr>
-						</thead>
-						<tbody class="nomes">
-							<c:forEach var="usuario" items="${listaUsuarios}">
-								<tr>
-									<td><button>editar</button></td>
-									<td><c:out value="${usuario.nome}"></c:out></td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-				<div class="botoes">
-					<a href="ClienteAdicionar">Adicionar</a>
-					<a href="ClienteEditar">Editar</a>
-					<a href="Home">Voltar</a>
-				</div>
+						</c:forEach>
+					</tbody>
+				</table>
+			</div>
+			<div class="botoes">
+				<a href="ClienteAdicionar">Adicionar</a>
+				<a href="ClienteVisualizar">Visualizar</a>
+				<a href="ClienteEditar">Editar</a>
+				<a href="Home">Voltar</a>
+			</div>
 		</form>
 	</div>
 </body>

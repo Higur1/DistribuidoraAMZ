@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>
@@ -26,20 +27,18 @@
 	</nav>
 	<div class="formulario">
 	<form action="Produto" method="post" class="form">
-			<div class="posicionarCheck">
-				<div class="bordaTabelaAdicionar">
-					<input type="checkbox">
-					<input type="text" class="tabelaAdicionar" id="nomeProduto" name="nomeProduto" placeholder="Nome do Produto"> 
-					<input type="text" class="tabelaAdicionar" id="categoria" name="categoria" placeholder="Categoria">
-					<input type="text" class="tabelaAdicionar" id="modelos" name="modelos" placeholder="Modelos">
-					<input type="text" class="tabelaAdicionar" id="nch/sh" name="nch/sh" placeholder="NCH/SH">
-					<input type="text" class="tabelaAdicionar" id="preco"  name="preco" placeholder="Preço de venda">
-					<input type="number" class="tabelaAdicionar" id="quantidade" name="quantidade">
-				</div>
-			</div>
+			<div class="listaBotoesCategoria">
+				<button class="categoriasChaves">Gorje</button>
+				<button class="categoriasChaves">Yale</button>
+				<button class="categoriasChaves">Yale Dupla</button>
+				<button class="categoriasChaves">Tetra</button>
+				<button class="categoriasChaves">Pantográficas</button>	
+				<button class="categoriasChaves">Codificadas</button>
+				<button class="categoriasChaves">Lâminas de Segredo</button>
+				<button class="categoriasChaves">Gorje</button>
+			</div>	
 			<div class="botoes">
-				<input type="submit" id="botao" name="botaoAdicionar" value="Adicionar">
-				<a href="Home">Voltar</a>
+				<a href="Home" class="voltarProduto">Voltar</a>
 			</div>
 		</form>
 	</div>

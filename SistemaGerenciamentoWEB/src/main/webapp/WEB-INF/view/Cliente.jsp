@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>
@@ -24,6 +25,7 @@
 			<li><a href="GerenciarUsuarios">Gerenciar Usuários</a></li>
 		</ul>
 	</nav>
+		<div>
 		<form action="Clinte" method="post" class="formulario">
 			<div>
 				<input type="text" class="inputPesquisa" placeholder="Digite sua pesquisa">
@@ -49,8 +51,8 @@
 				<a href="ClienteEditar">Editar</a>
 				<a href="Home">Voltar</a>
 			</div>
-			</div>
 		</form>
+	</div>
 </body>
 
 </html>

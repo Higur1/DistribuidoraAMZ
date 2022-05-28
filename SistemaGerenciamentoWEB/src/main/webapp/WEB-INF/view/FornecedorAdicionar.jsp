@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>

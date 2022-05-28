@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>
@@ -22,9 +23,14 @@
 			<li><a href="Fornecedores">Fornecedores</a></li>
 			<%--<li><a href="Relatorios">Relátorios</a></li>--%>
 			<li><a href="GerenciarUsuarios">Gerenciar Usuários</a></li>
+			<li></li>
+			<li></li>
 		</ul>
 	</nav>
-		<h2>DISTRIBUIDORA AMZ</h2>
+		<div class="informacaoEmpresa">
+			<h2>DISTRIBUIDORA AMZ</h2>
+			<img src="./resources/img/DistribuidoraAMZ.png">
+		</div>
 </body>
 
 </html>

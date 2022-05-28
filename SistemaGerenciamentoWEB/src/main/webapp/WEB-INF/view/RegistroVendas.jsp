@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>
@@ -24,32 +25,61 @@
 			<li><a href="GerenciarUsuarios">Gerenciar Usuários</a></li>
 		</ul>
 	</nav>
-
-	<input type="text" id="input" name="inputPesquisa" value="Digite a pesquisa">
-	<table>
-		<thead>
-			<tr>
-				<th></th>
-				<th>ID</th>
-				<th>Descrição da Venda</th>
-				<th>Data</th>
-				<th>Valor</th>
-			</tr>
-		</thead>
-		<tbody>
+	<div class="formulario">
+		<form action="RegistroVendas" method="post" class="form">
+			<div>
+				<input type="text" class="inputPesquisa" placeholder="Digite sua pesquisa">
+				<table class="table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>Descrição da Venda</th>
+							<th>Data</th>
+							<th>Valor</th>
+						</tr>
+					</thead>
+					<tbody class="nomes">
+						<c:forEach var="Venda" items="${listaVenda}">
+							<tr>
+								<td><input type="submit"><img src="./resources/img/editar"></td>
+								<td><c:out value="${Venda.id}"></c:out></td>
+								<td><c:out value="${Venda.descricao}"></c:out></td>
+								<td><c:out value="${Venda.data}"></c:out></td>
+								<td><c:out value="${Venda.valor}"></c:out></td>
+							</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+			</div>
+			<div class="botoes">
+				<a href="VendaVisualizar">Visualizar</a>
+				<a href="Home">Voltar</a>
+			</div>
+		</form>
+	</div>
+	<!-- MODAL DE VISUALIZAR DETALHAMENTO DA VENDA 
+		<table class="table">
+			<thead>
 				<tr>
-<%-- 					<c:if test="$"> --%>
-<%-- 						<c:forEach var="c" items="$"> --%>
-<!-- 							<tr> -->
-<%-- 								<td><c:out value="$"></c:out></td> --%>
-<!-- 							</tr> -->
-<%-- 						</c:forEach> --%>
-<%-- 					</c:if> --%>
+					<th>Qtd</th>
+					<th>Descrição do Produto</th>
+					<th>Valor Unitario</th>
+					<th>Valor Total</th>
 				</tr>
-		</tbody>
-	</table>
-	<input type="submit" id="botao" name="botaoVisualizar" value="Visualizar">
-	<input type="submit" id="botao" name="botaoVoltar" value="Voltar">
+			</thead>
+			<tbody class="nomes">
+				<c:forEach var="Venda" items="${listaVenda}">
+					<tr>
+						<td><c:out value="${Venda.quantidade}"></c:out></td>
+						<td><c:out value="${Venda.descricao}"></c:out></td>
+						<td><c:out value="${Venda.valorUnitario}"></c:out></td>
+						<td><c:out value="${Venda.valorTotal}"></c:out></td>
+					</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+	-->	
 </body>
 
 </html>

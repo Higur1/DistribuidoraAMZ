@@ -15,6 +15,7 @@
 <body>
 	<nav class="menu-lateral">
 		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
 			<li><a href="Produto">Produto</a></li>
 			<li><a href="Cliente">Clientes</a></li>
 			<li><a href="Estoque">Estoque</a></li>
@@ -33,7 +34,6 @@
 					<input type="text" class="tabelaAdicionar" id="CPF" name="CPF" placeholder="CPF">
 					<input type="text" class="tabelaAdicionar" id="Telefone" name="Telefone" placeholder="Telefone">
 					<input type="text" class="tabelaAdicionar" id="Email" name="Email" placeholder="Email">
-					<input type="text" class="tabelaAdicionar" id="InscricaoEstadual" name="InscricaoEstadual" placeholder="InscricaoEstadual">
 					<input type="text" class="tabelaAdicionar" id="CEP"  name="CEP" placeholder="CEP">
 					<input type="text" class="tabelaAdicionar" id="Logradouro" name="Logradouro" placeholder="Logradouro">
 					<input type="text" class="tabelaAdicionar" id="Numero"  name="Numero" placeholder="Numero">

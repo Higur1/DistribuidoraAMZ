@@ -14,13 +14,16 @@
 
 <body>
 	<div class="menu-lateral">
-		<a href="Produto">Produto</a>
-		<a href="Cliente">Clientes</a>
-		<a href="Estoque">Estoque</a>
-		<a href="RegistroVendas">Registro De Vendas</a>
-		<a href="Fornecedores">Fornecedores</a>
-		<%--<a href="Relatorios">Relátorios</a>--%>
-		<a href="GerenciarUsuarios">Gerenciar Usuários</a>
+		<ul>
+			<li><a href="Home"><img src="./resources/img/DistribuidoraAMZ.png"></a>
+			<li><a href="Produto">Produto</a></li>
+			<li><a href="Cliente">Clientes</a></li>
+			<li><a href="Estoque">Estoque</a></li>
+			<li><a href="RegistroVendas">Registro De Vendas</a></li>
+			<li><a href="Fornecedores">Fornecedores</a></li>
+			<%--<li><a href="Relatorios">Relátorios</a></li>--%>
+			<li><a href="GerenciarUsuarios">Gerenciar Usuários</a></li>
+		</ul>
 	</div>
 </body>
 
